@@ -1,12 +1,104 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона!</title>
+    <title>Sedona</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+    <header class="main-header">
+      <nav class="main-navigation">
+        <ul class="site-navigation">
+          <li><a href="info.html">ИНФОРМАЦИЯ</a></li>
+          <li><a href="foto_and_video.html">ФОТО И ВИДЕО</a></li>
+          <li><a href="map.html">КАРТА ШТАТА</a></li>
+          <li><a href="hotel.html">ГОСТИНИЦЫ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <h1 class="visually_hidden">Добро пожаловать в Седону!</h1>
+      <p><b>СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</b></p>
+      <p>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ ЧЕМ ГРАНД КАНЬОН!</p>
+      <section class="first_reason">
+        <h2 class="visually_hidden">Первая причина</h2>
+        <ul class="first_reason_list">
+          <li class="first_reason_item">
+            <h3>НАСТОЯЩИЙ ГОРОДОК<h3>
+          </li>
+          <li class="first_reason_item">- №1 -</li>
+          <li class="first_reason_item">СЕДОНА - НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</li>
+        </ul>
+        <img src="city.png" alt="фото города" width="" height="">
+      </section>
+      <section class="feature">
+        <h2 class="visually_hidden">Попробуйте!</h2>
+		<!--сомневаюсь, что надо использовать именно термины-определения, а не список-->
+        <dl class="suggest">
+          <dt class="suggest_item">ЖИЛЬЕ</dt>
+          <dd class="suggest_definition">РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!</dd>
+          <dt class="suggest_item">ЕДА</dt>
+          <dd class="suggest_definition">ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</dd>
+          <dt class="suggest_item">СУВЕНИРЫ</dt>
+          <dd class="suggest_definition">НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</dd>
+        </dl>
+      </section>
+	  <section class="second_reason">
+		<h2 class="visually_hidden">Вторая причина</h2>
+		<ul class="second_reason_list">
+          <li class="second_reason_first_reason_item">
+            <h3>ТАМ ЕСТЬ МОСТ ДЬЯВОЛА<h3>
+          </li>
+          <li class="second_reason_first_reason_item">- №2 -</li>
+          <li class="second_reason_first_reason_item">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ ВЫ КОНЕЧНО ОСМЕЛИТЕСЬ</li>
+        </ul>
+        <img src="bridge.png" alt="мост дьявола" width="" height="">
+	  </section>
+	  <section class="other_reasons">
+		<h2 class="visually_hidden">Другие причины</h2>
+		<ul class="other_reasons_list">
+          <li class="other_reasons_item">НЕБОЛЬШАЯ ПЛОЩАДЬ</li>
+          <li class="other_reasons_item">- №3 -</li>
+          <li class="other_reasons_item">ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</li>
+		  <li class="other_reasons_item">КРАСИВАЯ ДОРОГА</li>
+          <li class="other_reasons_item">- №4 -</li>
+          <li class="other_reasons_item">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</li>
+		  <li class="other_reasons_item">МАЛО ТУРИСТОВ</li>
+          <li class="other_reasons_item">- №5 -</li>
+          <li class="other_reasons_item">БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ</li>
+        </ul>
+	  </section>
+	  <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+	  <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
+	  <section class="find">
+		<h2 class="find_title">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2> <!-- или тут достаточно <p>?-->
+		<form action="#" method="post">
+			<label>ДАТА ЗАЕЗДА: 
+				<input type="text" name="arrival" id="arrival-field" value="24 АПРЕЛЯ 2017">
+			</label>
+			<br>
+			<label>ДАТА ВЫЕЗДА: 
+				<input type="text" name="departure" id="departure-field" value="4 ИЮЛЯ 2017">
+			</label>
+			<br>
+			<label>ВЗРОСЛЫЕ: 
+				<input type="text" name="grownups" id="grownups-field" value="2">
+			</label>
+			<label>ДЕТИ: 
+				<input type="text" name="children" id="children-field" value="0">
+			</label>
+			<br>
+			<input type="submit" value="НАЙТИ">
+		</form>
+	  </section>
+    </main>
+	<footer class="main-footer">
+		<a class="home">#VISITSEDONA</a>
+		<a class="social social-tw" href="#"><img src="social.png" alt="twitter" width="" height=""></a>
+		<a class="social social-fb" href="#"><img src="social.png" alt="facebook" width="" height=""></a>
+		<a class="social social-y" href="#"><img src="social.png" alt="youtube" width="" height=""></a>
+		<div class="copyright">
+			WEBSITE BY<a href="#"><img src="social.png" alt="html Academy" width="" height=""></a>
+		</div>
+	</footer>
   </body>
 </html>
