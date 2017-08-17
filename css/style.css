@@ -1,0 +1,172 @@
+body {
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 26px;
+	color: black;
+	font-weight: normal;
+	font-family: "PTSans", "Arial", serif;
+}
+
+.visually_hidden {
+	display: none;
+}
+
+.site-navigation a{
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.site-navigation {
+	list-style: none;
+}
+
+.description_header {
+	font-size: 21px;
+	font-weight: bold;
+}
+
+.description_reasons {
+	color: #333333;
+}
+
+.reason {
+	background-color: #81b3d2;
+}
+
+.reason_text {
+	line-height: 21px;
+	color: white;
+}
+
+.reason_text h3 {
+	font-size: 21px;
+	line-height: 21px;
+	color: white;
+	font-weight: bold;
+}
+
+.feature {
+	line-height: 21px;
+	color: #333333;
+}
+
+.feature h3 {
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: bold;
+}
+
+.grey {
+	background-color: #eeeeee;
+	
+}
+
+.grey .reason_text {
+	color: black;
+}
+
+.grey .reason_text h3{
+	color: black;
+}
+
+.find {
+	font-weight: bold;
+}
+
+.find p {
+	line-height: 24px;
+	color: #333333;
+}
+
+.find h2{
+	font-size: 30px;
+	line-height: 24px;
+	font-weight: bold;
+}
+
+.link {
+	background-color: #766357;
+}
+
+.link a{
+	font-size: 21px;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.hashtag a {
+	font-size: 21px;
+	line-height: normal;
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.social {
+	background-color: #81b3d2;
+}
+
+.params {
+	background-color: #0066cc;
+}
+
+.params h2 {
+	font-size: 16px;
+	line-height: 21px;
+	color: white;
+	font-weight: bold;
+}
+
+.params label {
+	line-height: 21px;
+	color: white;
+}
+
+.sorting h2 {
+	font-size: 21px;
+	font-weight: bold;
+}
+
+.sorting_list {
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: normal;
+}
+
+.sorting_list a {
+	color: 81b3d2;
+	text-decoration: none;
+}
+
+.result {
+	line-height: 21px;
+	color: #333333;
+}
+
+.result h2 {
+	font-size: 21px;
+	font-weight: bold;
+}
+
+.more {
+	background-color: #81b3d2;
+}
+
+.reserv {
+	background-color: #766357;
+}
+
+.result a {
+	color: white;
+	font-weight: bold;
+}
+
+.score {
+	background-color: #f2f2f2;
+}
+
+.score p {
+	color: #666666;
+}
