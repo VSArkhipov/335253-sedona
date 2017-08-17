@@ -2,13 +2,15 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
 		<title>Седона</title>
 	</head>
 	<body>
 		<header class="header">
 			<div class="logo">
 				<a>
-					<img src="logo.png" alt="логотип" width="" height="">
+					<img src="img/logo.jpg" alt="логотип" width="138" height="70">
 				</a>
 			</div>
 			<nav class="main-navigation">
@@ -23,8 +25,8 @@
 		<main class="container">
 			<section class="description">
 				<h1 class="visually_hidden">Добро пожаловать в Седону!</h1>
-				<p>>Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
-				<p>Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
+				<p class="description_header">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+				<p class="description_reasons">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
 			</section>
 			<section class="reason">
 				<h2 class="visually_hidden">Первая причина</h2>
@@ -34,20 +36,29 @@
 					<p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
 				</div>
 				<div class="reason_image">		
-					<img src="city.png" alt="фото города" width="" height="">
+					<img src="img/city.jpg" alt="фото города" width="512" height="256">
 				</div>
 			</section>
 			<section class="feature">
 				<h2 class="visually_hidden">Попробуйте!</h2>
 				<div class="house">
+					<div class="house_icon">
+						<img src="img/icon-1.svg" alt="иконка жилья">
+					</div>
 					<h3>Жилье</h3>
 					<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 				</div>
 				<div class="food">
+					<div class="food_icon">
+						<img src="img/icon-3.svg" alt="иконка еды">
+					</div>
 					<h3>Еда</h3>
 					<p>Всегда заказывайте фирменный бургер вы не разочаруетесь!</p>
 				</div>
 				<div class="souvenir">
+					<div class="souvenir_icon">
+						<img src="img/icon-2.svg" alt="иконка подарки">
+					</div>
 					<h3>Сувениры</h3>
 					<p>Не только китайского, но и местного производства!</p>
 				</div>
@@ -60,7 +71,7 @@
 					<p>Да, по нему можно пройти! Если вы конечно осмелитесь</p>
 				</div>
 				<div class="reason_image">
-					<img src="bridge.png" alt="мост дьявола" width="" height="">
+					<img src="img/bridge.jpg" alt="мост дьявола" width="" height="">
 				</div>
 			</section>
 			<section class="reason grey">
@@ -90,7 +101,9 @@
 			<section class="find">
 				<h2>Заинтересовались?</h2>
 				<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-				<a href="#">Поиск гостиницы в Седоне</a>
+				<div class="link">
+					<a href="#">Поиск гостиницы в Седоне</a>
+				</div>
 				<form action="https://echo.htmlacademy.ru" method="post">
 					<label>Дата заезда: 
 						<input type="date" name="arrival" id="arrival-field" value="24 апреля 2017">
@@ -113,12 +126,12 @@
 				<a class="home">#visitsedona</a>
 			</div>
 			<div class="soc">
-				<a class="social social-tw" href="#"><img src="social.png" alt="twitter" width="" height=""></a>
-				<a class="social social-fb" href="#"><img src="social.png" alt="facebook" width="" height=""></a>
-				<a class="social social-y" href="#"><img src="social.png" alt="youtube" width="" height=""></a>
+				<a class="social social-tw" href="#"><img src="img/twitter.svg" alt="twitter" width="" height=""></a>
+				<a class="social social-fb" href="#"><img src="img/fb-icon.svg" alt="facebook" width="" height=""></a>
+				<a class="social social-y" href="#"><img src="img/youtube.svg" alt="youtube" width="" height=""></a>
 			</div>
 			<div class="copyright">
-				<p>website by</p><a href="#"><img src="social.png" alt="html Academy" width="" height=""></a>
+				<p>website by</p><a href="#"><img src="img/logo-htmlacademy.svg" alt="html Academy" width="115" height="41"></a>
 			</div>
 		</footer>
 	</body>

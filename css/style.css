@@ -1,0 +1,217 @@
+body {
+	text-transform: uppercase;
+}
+
+.visually_hidden {
+	display: none;
+}
+
+.site-navigation a{
+	font-size: 14px;
+	line-height: 26px;
+	color: black;
+	font-weight: bold;
+	font-family: "PTSans", "Arial", serif;
+	text-decoration: none;
+}
+
+.site-navigation li{
+	list-style-type: none;
+}
+
+.description_header {
+	font-size: 21px;
+	line-height: 26px;
+	color: black;
+	font-weight: bold;
+	font-family: "PTSans", "Arial", serif;
+}
+
+.description_reasons {
+	font-size: 14px;
+	line-height: 26px;
+	color: #333333;
+	font-weight: normal;
+	font-family: "PTSans", "Arial", serif;
+}
+
+.reason {
+	background-color: #81b3d2;
+}
+
+.reason_text {
+	font-size: 14px;
+	line-height: 21px;
+	color: white;
+	font-weight: normal;
+	font-family: "PTSans", "Arial", serif;	
+}
+
+.reason_text h3 {
+	font-size: 21px;
+	line-height: 21px;
+	color: white;
+	font-weight: bold;
+	font-family: "PTSans", "Arial", serif;
+}
+
+.feature {
+	font-size: 14px;
+	line-height: 21px;
+	color: #333333;
+	font-weight: normal;
+	font-family: "PTSans", "Arial", serif;
+}
+
+.feature h3 {
+	font-size: 21px;
+	line-height: 21px;
+	color: black;
+	font-weight: bold;
+	font-family: "PTSans", "Arial", serif;
+}
+
+.grey {
+	background-color: #eeeeee;
+	
+}
+
+.grey .reason_text {
+	color: black;
+}
+
+.grey .reason_text h3{
+	color: black;
+}
+
+.find {
+	font-size: 14px;
+	line-height: 26px;
+	color: black;
+	font-weight: bold;
+	font-family: "PTSans", "Arial", serif;
+}
+
+.find p {
+	font-size: 14px;
+	line-height: 24px;
+	color: #333333;
+	font-weight: normal;
+	font-family: "PTSans", "Arial", serif;
+}
+
+.find h2{
+	font-size: 30px;
+	line-height: 24px;
+	color: black;
+	font-weight: bold;
+	font-family: "PTSans", "Arial", serif;
+}
+
+.link {
+	background-color: #766357;
+}
+
+.link a{
+	font-size: 21px;
+	line-height: 26px;
+	color: white;
+	font-weight: bold;
+	font-family: "PTSans", "Arial", serif;
+	text-decoration: none;
+}
+
+.hashtag a {
+	font-size: 21px;
+	line-height: normal;
+	color: black;
+	font-weight: bold;
+	font-family: "PTSans", "Arial", serif;
+	text-decoration: none;
+}
+
+.social {
+	background-color: #81b3d2;
+}
+
+.copyright p {
+	font-size: 14px;
+	line-height: 26px;
+	color: black;
+	font-weight: normal;
+	font-family: "PTSans", "Arial", serif;
+}
+
+.params h2 {
+	font-size: 16px;
+	line-height: 21px;
+	color: black <!--white-->;
+	font-weight: bold;
+	font-family: "PTSans", "Arial", serif;
+}
+
+.params label {
+	font-size: 14px;
+	line-height: 21px;
+	color: black <!--white-->;
+	font-weight: normal;
+	font-family: "PTSans", "Arial", serif;
+}
+
+.sorting h2 {
+	font-size: 21px;
+	line-height: 26px;
+	color: black;
+	font-weight: bold;
+	font-family: "PTSans", "Arial", serif;
+}
+
+.sorting_list {
+	font-size: 12px;
+	line-height: 18px;
+	color: black;
+	font-weight: normal;
+	font-family: "PTSans", "Arial", serif;
+}
+
+.sorting_list a {
+	color: 81b3d2;
+	text-decoration: none;
+}
+
+.result {
+	font-size: 14px;
+	line-height: 21px;
+	color: #333333;
+	font-weight: normal;
+	font-family: "PTSans", "Arial", serif;
+}
+
+.result h2 {
+	font-size: 21px;
+	line-height: 26px;
+	color: black;
+	font-weight: bold;
+	font-family: "PTSans", "Arial", serif;
+}
+
+.more {
+	background-color: #81b3d2;
+}
+
+.reserv {
+	background-color: #766357;
+}
+
+.result a {
+	color: white;
+	font-weight: bold;
+}
+
+.score {
+	background-color: #f2f2f2;
+}
+
+.score p {
+	color: #666666;
+}
