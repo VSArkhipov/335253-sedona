@@ -1,5 +1,10 @@
 body {
 	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 26px;
+	color: black;
+	font-weight: normal;
+	font-family: "PTSans", "Arial", serif;
 }
 
 .visually_hidden {
@@ -7,11 +12,8 @@ body {
 }
 
 .site-navigation a{
-	font-size: 14px;
-	line-height: 26px;
 	color: black;
 	font-weight: bold;
-	font-family: "PTSans", "Arial", serif;
 	text-decoration: none;
 }
 
@@ -21,18 +23,11 @@ body {
 
 .description_header {
 	font-size: 21px;
-	line-height: 26px;
-	color: black;
 	font-weight: bold;
-	font-family: "PTSans", "Arial", serif;
 }
 
 .description_reasons {
-	font-size: 14px;
-	line-height: 26px;
 	color: #333333;
-	font-weight: normal;
-	font-family: "PTSans", "Arial", serif;
 }
 
 .reason {
@@ -40,11 +35,8 @@ body {
 }
 
 .reason_text {
-	font-size: 14px;
 	line-height: 21px;
 	color: white;
-	font-weight: normal;
-	font-family: "PTSans", "Arial", serif;	
 }
 
 .reason_text h3 {
@@ -52,23 +44,17 @@ body {
 	line-height: 21px;
 	color: white;
 	font-weight: bold;
-	font-family: "PTSans", "Arial", serif;
 }
 
 .feature {
-	font-size: 14px;
 	line-height: 21px;
 	color: #333333;
-	font-weight: normal;
-	font-family: "PTSans", "Arial", serif;
 }
 
 .feature h3 {
 	font-size: 21px;
 	line-height: 21px;
-	color: black;
 	font-weight: bold;
-	font-family: "PTSans", "Arial", serif;
 }
 
 .grey {
@@ -85,27 +71,18 @@ body {
 }
 
 .find {
-	font-size: 14px;
-	line-height: 26px;
-	color: black;
 	font-weight: bold;
-	font-family: "PTSans", "Arial", serif;
 }
 
 .find p {
-	font-size: 14px;
 	line-height: 24px;
 	color: #333333;
-	font-weight: normal;
-	font-family: "PTSans", "Arial", serif;
 }
 
 .find h2{
 	font-size: 30px;
 	line-height: 24px;
-	color: black;
 	font-weight: bold;
-	font-family: "PTSans", "Arial", serif;
 }
 
 .link {
@@ -114,10 +91,8 @@ body {
 
 .link a{
 	font-size: 21px;
-	line-height: 26px;
 	color: white;
 	font-weight: bold;
-	font-family: "PTSans", "Arial", serif;
 	text-decoration: none;
 }
 
@@ -126,7 +101,6 @@ body {
 	line-height: normal;
 	color: black;
 	font-weight: bold;
-	font-family: "PTSans", "Arial", serif;
 	text-decoration: none;
 }
 
@@ -134,44 +108,27 @@ body {
 	background-color: #81b3d2;
 }
 
-.copyright p {
-	font-size: 14px;
-	line-height: 26px;
-	color: black;
-	font-weight: normal;
-	font-family: "PTSans", "Arial", serif;
-}
-
 .params h2 {
 	font-size: 16px;
 	line-height: 21px;
 	color: black <!--white-->;
 	font-weight: bold;
-	font-family: "PTSans", "Arial", serif;
 }
 
 .params label {
-	font-size: 14px;
 	line-height: 21px;
 	color: black <!--white-->;
-	font-weight: normal;
-	font-family: "PTSans", "Arial", serif;
 }
 
 .sorting h2 {
 	font-size: 21px;
-	line-height: 26px;
-	color: black;
 	font-weight: bold;
-	font-family: "PTSans", "Arial", serif;
 }
 
 .sorting_list {
 	font-size: 12px;
 	line-height: 18px;
-	color: black;
 	font-weight: normal;
-	font-family: "PTSans", "Arial", serif;
 }
 
 .sorting_list a {
@@ -180,19 +137,13 @@ body {
 }
 
 .result {
-	font-size: 14px;
 	line-height: 21px;
 	color: #333333;
-	font-weight: normal;
-	font-family: "PTSans", "Arial", serif;
 }
 
 .result h2 {
 	font-size: 21px;
-	line-height: 26px;
-	color: black;
 	font-weight: bold;
-	font-family: "PTSans", "Arial", serif;
 }
 
 .more {
