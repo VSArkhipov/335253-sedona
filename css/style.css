@@ -17,8 +17,8 @@ body {
 	text-decoration: none;
 }
 
-.site-navigation li{
-	list-style-type: none;
+.site-navigation {
+	list-style: none;
 }
 
 .description_header {
@@ -108,16 +108,20 @@ body {
 	background-color: #81b3d2;
 }
 
+.params {
+	background-color: #0066cc;
+}
+
 .params h2 {
 	font-size: 16px;
 	line-height: 21px;
-	color: black <!--white-->;
+	color: white;
 	font-weight: bold;
 }
 
 .params label {
 	line-height: 21px;
-	color: black <!--white-->;
+	color: white;
 }
 
 .sorting h2 {
