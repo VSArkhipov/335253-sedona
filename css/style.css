@@ -8,17 +8,36 @@ body {
 }
 
 .visually_hidden {
-	display: none;
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
 }
 
-.site-navigation a{
+.site-navigation {
+	list-style: none;
+}
+
+.site-navigation a {
 	color: black;
 	font-weight: bold;
 	text-decoration: none;
 }
 
-.site-navigation {
-	list-style: none;
+.site-navigation .active {
+	color: #766357;
+}
+
+.site-navigation a:hover, .site-navigation a:focus {
+	color: #81b3d2;
+}
+
+.site-navigation a:active {
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .description_header {
@@ -96,6 +115,34 @@ body {
 	text-decoration: none;
 }
 
+.link a:hover, .link a:focus {
+	background-color: #604e43;
+}
+
+.link a:active {
+	background-color: #503e33;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.button_find button {
+	background-color: #81b3d2;
+	border: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 21px;
+	line-height: normal;
+	font-weight: bold;
+}
+
+.button_find button:hover, .button button:focus {
+	background-color: #669ec0;
+}
+
+.button_find button:active {
+	background-color: #5496bd;
+	color: rgba(255, 255, 255, 0.3);
+}
+
 .hashtag a {
 	font-size: 21px;
 	line-height: normal;
@@ -108,6 +155,30 @@ body {
 	background-color: #81b3d2;
 }
 
+.soc a:hover, .soc a:focus {
+	background-color: #669ec0;
+}
+
+.soc a:active {
+	background-color: #5496bd;
+	color: rgba(255, 255, 255, 0.3); /* svg не меняет цвет*/
+}
+
+input {
+    background-color: #f2f2f2;
+	text-transform: uppercase;
+	line-height: normal;
+	font-weight: bold;
+}
+
+input:hover {
+    background-color: #ebebeb;
+}
+
+ input:focus {
+	 background-color: #ffffff;
+ }
+ 
 .params {
 	background-color: #0066cc;
 }
@@ -124,20 +195,55 @@ body {
 	color: white;
 }
 
+.params button {
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px solid #ffffff;
+	color: white;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+}
+
+.params button:hover, .params button:focus {
+	background-color: #ffffff;
+	color: #000000
+}
+
 .sorting h2 {
 	font-size: 21px;
 	font-weight: bold;
 }
 
-.sorting_list {
+.sorting_option {
 	font-size: 12px;
 	line-height: 18px;
 	font-weight: normal;
 }
 
-.sorting_list a {
-	color: 81b3d2;
+.sorting-list {
+	list-style: none;
+}
+
+.sorting-list a {
+	color: rgba(0, 0, 0, 0.3);
 	text-decoration: none;
+	border-bottom: 1px dashed #81b3d2;
+}
+
+.sorting-list a:hover, .sorting-list a:focus {
+	color: #81b3d2;
+}
+
+.sorting-list a:active {
+	color: black;
+	border-bottom: none;
+}
+
+.sorting-list .current {
+	color: #81b3d2;
+	text-decoration: none;
+	border-bottom: none;
 }
 
 .result {
@@ -145,9 +251,18 @@ body {
 	color: #333333;
 }
 
-.result h2 {
+.hotel_info h2 a {
 	font-size: 21px;
 	font-weight: bold;
+	color: black;
+}
+
+.hotel_info h2 a:hover, .hotel_info h2 a:focus {
+	color: #81b3d2;
+}
+
+.hotel_info h2 a:active {
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .more {
@@ -161,6 +276,25 @@ body {
 .result a {
 	color: white;
 	font-weight: bold;
+	text-decoration: none;
+}
+
+.more a:hover, .more a:focus {
+	background-color: #669ec0;
+}
+
+.more a:active {
+	background-color: #5496bd;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.reserv a:hover, .reserv a:focus {
+	background-color: #604e43;
+}
+
+.reserv a:active {
+	background-color: #503e33;
+	color: rgba(255, 255, 255, 0.3);
 }
 
 .score {

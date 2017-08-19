@@ -16,9 +16,9 @@
 			<nav class="main-navigation">
 				<ul class="site-navigation">
 					<li><a href="index.html">Информация</a></li>
-					<li><a href="foto_and_video.html">Фото и видео</a></li>
-					<li><a href="map.html">Карта штата</a></li>
-					<li><a>Гостиницы</a></li>
+					<li><a href="#">Фото и видео</a></li>
+					<li><a href="#">Карта штата</a></li>
+					<li><a class="active">Гостиницы</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -50,7 +50,9 @@
 							<input type="text" name="max" id="max-field" value="до 3000">
 						</label>
 						<input type="range" min="0" max="3000">
-						<input type="submit" value="Показать">
+						<div class=button_show">
+							<button>Показать</button>
+						</div>
 					</div>
 				</form>
 			</section>
@@ -59,11 +61,11 @@
 				<div class="found">
 					<h2> Найдено: 3</h2>
 				</div>
-				<div class="sorting_list">
+				<div class="sorting_option">
 					<p>Сортировка:</p>
-					<ul>
+					<ul class="sorting-list">
 						<li>
-							<a href="#">По цене</a>
+							<a href="#" class="current">По цене</a>
 						</li>
 						<li>
 							<a href="#">По типу</a>
@@ -86,11 +88,11 @@
 					<img src="img/amara_resort_&_spa.jpg" alt="Фото гостиницы Amara Resort & Spa" width="135" height="90">
 				</div>
 				<div class="hotel_info">
-					<h2>Amara Resort & Spa</h2>
+					<h2><a href="">Amara Resort & Spa</a></h2>
 					<span class="type">Гостиница</span>
 					<span class="price">от 4000 р.</span>
-					<a class="more">Подробнее</a>
-					<a class="reserv">Забронировать</a>
+					<span class="more"><a href="">Подробнее</a></span>
+					<span class="reserv"><a href="">Забронировать</a></span>
 				</div>
 				<div class="rating">
 					<img src="4.jpg" alt="4 звезды" width="135" height="90">
@@ -104,11 +106,11 @@
 					<img src="img/desert_quail_inn.jpg" alt="Фото гостиницы Desert Quail Inn" width="135" height="90">
 				</div>
 				<div class="hotel_info">
-					<h2>Desert Quail Inn</h2>
+					<h2><a href="">Desert Quail Inn</a></h2>
 					<span class="type">Мотель</span>
 					<span class="price">от 3000 р.</span>
-					<a class="more">Подробнее</a>
-					<a class="reserv">Забронировать</a>
+					<span class="more"><a href="">Подробнее</a></span>
+					<span class="reserv"><a href="">Забронировать</a></span>
 				</div>
 				<div class="rating">
 					<img src="3.jpg" alt="3 звезды" width="" height="">
@@ -122,11 +124,11 @@
 					<img src="img/villas_at_poco_diablo.jpg" alt="Фото гостиницы Villas at poco diablo" width="135" height="90">
 				</div>
 				<div class="hotel_info">
-					<h2>Villas at poco diablo</h2>
+					<h2><a href="">Villas at poco diablo</a></h2>
 					<span class="type">Апартаменты</span>
 					<span class="price">от 2000 р.</span>
-					<a class="more">Подробнее</a>
-					<a class="reserv">Забронировать</a>
+					<span class="more"><a href="">Подробнее</a></span>
+					<span class="reserv"><a href="">Забронировать</a></span>
 				</div>
 				<div class="rating">
 					<img src="2.jpg" alt="2 звезды" width="" height="">
