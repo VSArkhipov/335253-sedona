@@ -4,7 +4,7 @@ body {
 	line-height: 26px;
 	color: black;
 	font-weight: normal;
-	font-family: "PTSans", "Arial", serif;
+	font-family: "PT Sans", Arial, sans-serif;
 }
 
 .visually_hidden {
@@ -104,6 +104,10 @@ body {
 	font-weight: bold;
 }
 
+.map {
+	background: url("../img/map.jpg") no-repeat;
+}
+
 .link {
 	background-color: #766357;
 }
@@ -161,26 +165,26 @@ body {
 
 .soc a:active {
 	background-color: #5496bd;
-	color: rgba(255, 255, 255, 0.3); /* svg не меняет цвет*/
+	color: rgba(255, 255, 255, 0.3);
 }
 
-input {
+.params input {
     background-color: #f2f2f2;
 	text-transform: uppercase;
 	line-height: normal;
 	font-weight: bold;
 }
 
-input:hover {
+.params input:hover {
     background-color: #ebebeb;
 }
 
- input:focus {
+.params input:focus {
 	 background-color: #ffffff;
  }
  
 .params {
-	background-color: #0066cc;
+	background: url("../img/fon.jpg") no-repeat #0066cc ;
 }
 
 .params h2 {
