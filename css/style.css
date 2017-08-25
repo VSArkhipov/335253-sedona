@@ -43,6 +43,8 @@ body {
 .description_header {
 	font-size: 21px;
 	font-weight: bold;
+	width: 450px;
+	text-align: center;
 }
 
 .description_reasons {
@@ -51,11 +53,13 @@ body {
 
 .reason {
 	background-color: #81b3d2;
+	
 }
 
 .reason_text {
 	line-height: 21px;
 	color: white;
+	text-align: center;
 }
 
 .reason_text h3 {
@@ -63,6 +67,7 @@ body {
 	line-height: 21px;
 	color: white;
 	font-weight: bold;
+	
 }
 
 .feature {
@@ -106,6 +111,8 @@ body {
 
 .map {
 	background: url("../img/map.jpg") no-repeat;
+	padding-bottom: 80px;
+	margin-bottom: 35px;
 }
 
 .link {
@@ -119,11 +126,11 @@ body {
 	text-decoration: none;
 }
 
-.link a:hover, .link a:focus {
+.link:hover, .link a:focus { /* не работает фокус*/
 	background-color: #604e43;
 }
 
-.link a:active {
+.link:active {
 	background-color: #503e33;
 	color: rgba(255, 255, 255, 0.3);
 }
@@ -155,10 +162,6 @@ body {
 	text-decoration: none;
 }
 
-.social {
-	background-color: #81b3d2;
-}
-
 .soc a:hover, .soc a:focus {
 	background-color: #669ec0;
 }
@@ -166,6 +169,19 @@ body {
 .soc a:active {
 	background-color: #5496bd;
 	color: rgba(255, 255, 255, 0.3);
+}
+
+.academy {
+	width: 115px;
+	height: 41px;
+}
+
+.academy a:hover svg path, .academy a:focus svg path {
+	fill: #81b3d2;
+}
+
+.academy a:active svg path {
+	fill: #bdbbbc;
 }
 
 .params input {
@@ -184,7 +200,8 @@ body {
  }
  
 .params {
-	background: url("../img/fon.jpg") no-repeat #0066cc ;
+	background: url("../img/fon.jpg") no-repeat #0066cc;
+	background-size: 100% 100%;
 }
 
 .params h2 {
@@ -307,4 +324,190 @@ body {
 
 .score p {
 	color: #666666;
+}
+
+/* сетка */
+
+.header {
+	display: flex;
+	position: relative;
+	width: 768px;
+}
+
+.main-navigation {
+	width: 100%;
+	margin-right: 45px;
+	margin-left: 45px;
+}
+
+.site-navigation {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 0px;
+}
+
+.logo {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.container {
+	width: 768px;
+	
+}
+
+
+.description_header {
+	position: relative;
+	margin-right: auto;
+    margin-left: auto;
+}
+
+.description_reasons {
+	position: relative;
+	margin-right: auto;
+    margin-left: auto;
+	width: 485px;
+}
+
+.reason {
+	display: flex;
+	
+}
+
+.reason_text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 180px;
+	margin-right: auto;
+	margin-left: 35px;
+	padding-top: 25px;
+}
+
+.feture_wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 50px;
+	margin-right: 45px;
+}
+
+.house, .food, .souvenir {
+	display: flex;
+	flex-direction: column;
+	width: 160px;
+	text-align: center;
+	margin-top: 60px;
+}
+
+.reverse .reason_text{
+	order: 1;
+}
+
+.reason_grey_wrapper {
+	display: flex;
+	justify-content: space-between;
+	padding-right: 45px;
+	background: #eeeeee;
+}
+
+.grey .reason_text {
+	width: 155px;
+	background: #eeeeee;
+}
+
+
+
+.find h2 {
+	text-align: center;
+	margin-top: 55px;
+}
+
+.find p {
+	position: relative;
+	margin-right: auto;
+    margin-left: auto;
+	width: 450px;
+	text-align: center;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+.link {
+	margin-top: 50px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	width: 568px;
+	position: relative;
+	margin-right: auto;
+    margin-left: auto;
+	text-align: center;
+	
+}
+
+.map_background form{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 568px;
+	background: white;
+	margin-right: auto;
+    margin-left: auto;
+	padding-top: 55px;
+	align-items: flex-start;
+	
+}
+
+.map_background label {
+	padding-left: 55px;
+	padding-bottom: 30px;
+}
+
+.button_find button {
+	width: 458px;
+	position: relative;
+	margin-right: 55px;
+    margin-left: 55px;
+	padding-top: 18px;
+	padding-bottom: 20px;
+	margin-bottom: 55px;
+}
+
+.footer {
+	width: 768px;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+.hashtag {
+	margin-left: 60px;
+}
+
+.social {
+	display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.social-tw {
+    background: #81b3d2 url("../img/twitter.svg") no-repeat 50% 50%;
+}
+
+.social-fb {
+	background: #81b3d2 url("../img/fb-icon.svg") no-repeat 50% 50%;
+}
+
+.social-y {
+    background: #81b3d2 url("../img/youtube.svg") no-repeat 50% 50%;
+}
+
+.copyright_wrapper {
+	margin-right: 30px;
+	display: flex;
+	justify-content: space-between;
+	width: 195px;
 }
