@@ -67,7 +67,7 @@ body {
 	line-height: 21px;
 	color: white;
 	font-weight: bold;
-	
+	width: 155px;
 }
 
 .feature {
@@ -83,7 +83,6 @@ body {
 
 .grey {
 	background-color: #eeeeee;
-	
 }
 
 .grey .reason_text {
@@ -117,20 +116,25 @@ body {
 
 .link {
 	background-color: #766357;
+	margin-top: 50px;
 }
 
 .link a{
+	display: inline-block;
+	width: 568px;
 	font-size: 21px;
 	color: white;
 	font-weight: bold;
 	text-decoration: none;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 .link:hover, .link a:focus { /* не работает фокус*/
 	background-color: #604e43;
 }
 
-.link:active {
+.link a:active {
 	background-color: #503e33;
 	color: rgba(255, 255, 255, 0.3);
 }
@@ -166,9 +170,16 @@ body {
 	background-color: #669ec0;
 }
 
-.soc a:active {
-	background-color: #5496bd;
-	color: rgba(255, 255, 255, 0.3);
+.soc .social-tw:active {
+	background: #5496bd url("../img/twitter_active.svg") no-repeat 50% 50%;
+}
+
+.soc .social-fb:active {
+	background: #5496bd url("../img/fb-icon_active.svg") no-repeat 50% 50%;
+}
+
+.soc .social-y:active {
+	background: #5496bd url("../img/youtube_active.svg") no-repeat 50% 50%;
 }
 
 .academy {
@@ -201,7 +212,7 @@ body {
  
 .params {
 	background: url("../img/fon.jpg") no-repeat #0066cc;
-	background-size: 100% 100%;
+	
 }
 
 .params h2 {
@@ -286,14 +297,6 @@ body {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.more {
-	background-color: #81b3d2;
-}
-
-.reserv {
-	background-color: #766357;
-}
-
 .result a {
 	color: white;
 	font-weight: bold;
@@ -331,13 +334,14 @@ body {
 .header {
 	display: flex;
 	position: relative;
-	width: 768px;
+	width: 1200px;
+	margin: 0px auto;
 }
 
 .main-navigation {
 	width: 100%;
-	margin-right: 45px;
-	margin-left: 45px;
+	margin-right: 70px;
+	margin-left: 70px;
 }
 
 .site-navigation {
@@ -353,10 +357,13 @@ body {
 }
 
 .container {
-	width: 768px;
-	
+	width: 1200px;
+	margin: 0px auto;
 }
 
+.intro {
+	margin-bottom: -185px;
+}
 
 .description_header {
 	position: relative;
@@ -369,34 +376,36 @@ body {
 	margin-right: auto;
     margin-left: auto;
 	width: 485px;
+	margin-bottom: 57px;
 }
 
 .reason {
 	display: flex;
-	
 }
 
 .reason_text {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 180px;
+	width: 285px;
 	margin-right: auto;
-	margin-left: 35px;
+	margin-left: auto;
 	padding-top: 25px;
+}
+
+.feature {
+	margin-bottom: 65px;
 }
 
 .feture_wrapper {
 	display: flex;
-	justify-content: space-between;
-	margin-left: 50px;
-	margin-right: 45px;
+	justify-content: space-around;
 }
 
 .house, .food, .souvenir {
 	display: flex;
 	flex-direction: column;
-	width: 160px;
+	width: 400px;
 	text-align: center;
 	margin-top: 60px;
 }
@@ -407,17 +416,14 @@ body {
 
 .reason_grey_wrapper {
 	display: flex;
-	justify-content: space-between;
-	padding-right: 45px;
+	justify-content: space-around;
 	background: #eeeeee;
 }
 
 .grey .reason_text {
-	width: 155px;
-	background: #eeeeee;
+	width: 400px;
+	margin: auto;
 }
-
-
 
 .find h2 {
 	text-align: center;
@@ -435,15 +441,11 @@ body {
 }
 
 .link {
-	margin-top: 50px;
-	padding-top: 30px;
-	padding-bottom: 30px;
 	width: 568px;
 	position: relative;
 	margin-right: auto;
     margin-left: auto;
 	text-align: center;
-	
 }
 
 .map_background form{
@@ -456,7 +458,6 @@ body {
     margin-left: auto;
 	padding-top: 55px;
 	align-items: flex-start;
-	
 }
 
 .map_background label {
@@ -475,14 +476,16 @@ body {
 }
 
 .footer {
-	width: 768px;
+	position: relative;
+	width: 1200px;
+	margin: 0px auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
 }
 
 .hashtag {
-	margin-left: 60px;
+	margin-left: 130px;
 }
 
 .social {
@@ -506,8 +509,156 @@ body {
 }
 
 .copyright_wrapper {
-	margin-right: 30px;
+	margin-right: 100px;
 	display: flex;
 	justify-content: space-between;
 	width: 195px;
+}
+
+.infrastructure h2 {
+	margin: 0px 0px;
+	padding-bottom: 25px;
+}
+
+.infrastructure {
+	width: 145px;
+	margin-left: 70px;
+	margin-bottom: 30px;
+	padding-top: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.pool, .parking  {
+	margin-bottom: 23px;
+}
+
+.type_of_housing h2 {
+	margin: 0px 0px;
+	padding-bottom: 25px;
+}
+
+.type_of_housing {
+	width: 145px;
+	margin-left: 110px;
+	margin-bottom: 30px;
+	padding-top: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.hotel, .motel {
+	margin-bottom: 23px;
+}
+
+.price h2 {
+	margin: 0px 0px;
+	padding-bottom: 10px;
+}
+
+.price {
+	width: 320px;
+	margin-left: 340px;
+	margin-bottom: 30px;
+	margin-right: 70px;
+	padding-top: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.price .min, .price .max {
+	width: 150px;
+	margin-bottom: 10px;
+} 
+
+.range {
+	margin-bottom: 20px;
+	width: 310px;
+}
+
+.params_form {
+	display: flex;
+}
+
+.sorting {
+	display: flex;
+	align-items: center;
+	margin-left: 70px;
+	margin-bottom: 30px;
+}
+
+.sorting-list {
+	display: flex;
+	padding: 0px;
+	margin-left: 40px;
+}
+
+.sorting-list li{
+	padding-right: 30px;
+}
+
+.sorting_option {
+	margin-left: 50px;
+	display: flex;
+}
+
+.result {
+	display: flex;
+	margin-bottom: 10px;
+	align-items: flex-start;
+}
+
+.hotel_foto {
+	margin-left: 70px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.hotel_info {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin-left: 30px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding-bottom: 0px;
+}
+
+.hotel_info h2 {
+	margin: 0px 0px;
+	padding-top: 0px;
+	padding-bottom: 10px;
+}
+
+.rating {
+	margin-right: 70px;
+	margin-left: 580px;
+	margin-top: 30px;
+}
+
+.score p {
+	margin: 0px;
+	margin-top: 47px;
+}
+
+.min_price {
+	position: absolute;
+	left: 115px;
+}
+
+.more a {
+	display: inline-block;
+	width: 110px;
+	height: 27px;
+	background: #81b3d2;
+	text-align: center;
+}
+
+.reserv a {
+	display: inline-block;
+	width: 110px;
+	height: 27px;
+	background-color: #766357;
+	text-align: center;
+	margin-top: 10px;
 }
