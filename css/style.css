@@ -6,6 +6,7 @@ body {
 	font-weight: normal;
 	font-family: "PT Sans", Arial, sans-serif;
 	min-width: 768px;
+	background: #f2f2f2;
 }
 
 .visually_hidden {
@@ -39,6 +40,10 @@ body {
 
 .site-navigation a:active {
 	color: rgba(0, 0, 0, 0.3);
+}
+
+.container {
+	box-shadow: 0px 0px 7px 0 rgba(0, 0, 0, 0.35);
 }
 
 .description_header {
@@ -345,41 +350,46 @@ body {
 	height: 510px;
 	background: blue;
 	z-index: -1;
+	margin-bottom: 58px;
 }
 
 .main-navigation {
 	width: 100%;
 	background: white;
-	background: red;
+	margin-bottom: 1px;
+	
+	
 }
 
 .site-navigation {
 	display: flex;
-	
 	background: white;
 	padding: 0px;
-	
+	justify-content: space-between;
 }
 
 .site-navigation li {
-	background: pink;
+	
 	display: block;
 	width: 200px;
 	box-sizing: border-box;
-	padding: 0px;
+	text-align: center;
 }
 
 .site-navigation li:first-child {
-	margin-left: 70px;
+	padding-left: 70px;
+	text-align: left;
 }
 
 .site-navigation li:last-child {
-	
+	padding-right: 70px;
+	text-align: right;
 }
 
 .site-navigation li:nth-child(2) {
 	margin-right: 200px;
 	text-align: center;
+	
 }
 
 .logo {
@@ -393,24 +403,24 @@ body {
 	margin: 0px auto;
 }
 
-
-
 .description_header {
 	position: relative;
 	margin-right: auto;
     margin-left: auto;
+	margin-bottom: 27px;
 }
 
 .description_reasons {
 	position: relative;
 	margin-right: auto;
     margin-left: auto;
-	width: 485px;
-	margin-bottom: 57px;
+	width: 490px;
+	margin-bottom: 52px;
 }
 
 .reason {
 	display: flex;
+	height: 256px;
 }
 
 .reason_text {
@@ -421,15 +431,32 @@ body {
 	margin-right: auto;
 	margin-left: auto;
 	padding-top: 25px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+.reason_text h3 {
+	margin-bottom: 24px;
+}
+
+.reason_text span {
+	margin-bottom: 7px;
+}
+
+.reason_text p {
+	margin-left: 50px;
+	margin-right: 50px;
 }
 
 .feature {
 	margin-bottom: 65px;
+	/*background: blue;*/
 }
 
 .feture_wrapper {
 	display: flex;
 	justify-content: space-around;
+	align-items: flex-start;
 }
 
 .house, .food, .souvenir {
@@ -438,6 +465,18 @@ body {
 	width: 400px;
 	text-align: center;
 	margin-top: 60px;
+	/*background: pink;*/
+}
+
+.house_icon {
+	/*background: yellow;*/
+	width: 75px;
+	height: 76px;
+	margin-left: 162px;
+}
+
+.food_icon {
+	
 }
 
 .reverse .reason_text{
@@ -513,6 +552,7 @@ body {
 	justify-content: space-between;
 	align-items: baseline;
 	margin-top: 35px;
+	padding-bottom: 35px;
 }
 
 .hashtag {
@@ -627,8 +667,6 @@ body {
 	padding: 0px;
 	margin-left: 40px;
 }
-
-
 
 .sorting-list li:not(:nth-child(4)):not(:last-child) {
 	padding-right: 30px;
