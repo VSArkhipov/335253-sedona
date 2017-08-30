@@ -5,6 +5,8 @@ body {
 	color: black;
 	font-weight: normal;
 	font-family: "PT Sans", Arial, sans-serif;
+	min-width: 768px;
+	background: #f2f2f2;
 }
 
 .visually_hidden {
@@ -40,9 +42,15 @@ body {
 	color: rgba(0, 0, 0, 0.3);
 }
 
+.container {
+	box-shadow: 0px 0px 7px 0 rgba(0, 0, 0, 0.35);
+}
+
 .description_header {
 	font-size: 21px;
 	font-weight: bold;
+	width: 450px;
+	text-align: center;
 }
 
 .description_reasons {
@@ -51,11 +59,13 @@ body {
 
 .reason {
 	background-color: #81b3d2;
+	
 }
 
 .reason_text {
 	line-height: 21px;
 	color: white;
+	text-align: center;
 }
 
 .reason_text h3 {
@@ -63,6 +73,7 @@ body {
 	line-height: 21px;
 	color: white;
 	font-weight: bold;
+	width: 155px;
 }
 
 .feature {
@@ -78,7 +89,6 @@ body {
 
 .grey {
 	background-color: #eeeeee;
-	
 }
 
 .grey .reason_text {
@@ -106,20 +116,27 @@ body {
 
 .map {
 	background: url("../img/map.jpg") no-repeat;
+	padding-bottom: 80px;
+	margin-bottom: 35px;
 }
 
 .link {
 	background-color: #766357;
+	margin-top: 50px;
 }
 
 .link a{
+	display: inline-block;
+	width: 568px;
 	font-size: 21px;
 	color: white;
 	font-weight: bold;
 	text-decoration: none;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
-.link a:hover, .link a:focus {
+.link:hover, .link a:focus { /* не работает фокус*/
 	background-color: #604e43;
 }
 
@@ -155,17 +172,33 @@ body {
 	text-decoration: none;
 }
 
-.social {
-	background-color: #81b3d2;
-}
-
 .soc a:hover, .soc a:focus {
 	background-color: #669ec0;
 }
 
-.soc a:active {
-	background-color: #5496bd;
-	color: rgba(255, 255, 255, 0.3);
+.soc .social-tw:active {
+	background: #5496bd url("../img/twitter_active.svg") no-repeat 50% 50%;
+}
+
+.soc .social-fb:active {
+	background: #5496bd url("../img/fb-icon_active.svg") no-repeat 50% 50%;
+}
+
+.soc .social-y:active {
+	background: #5496bd url("../img/youtube_active.svg") no-repeat 50% 50%;
+}
+
+.academy {
+	width: 115px;
+	height: 41px;
+}
+
+.academy a:hover svg path, .academy a:focus svg path {
+	fill: #81b3d2;
+}
+
+.academy a:active svg path {
+	fill: #bdbbbc;
 }
 
 .params input {
@@ -184,7 +217,8 @@ body {
  }
  
 .params {
-	background: url("../img/fon.jpg") no-repeat #0066cc ;
+	background: url("../img/fon.jpg") no-repeat #0066cc;
+	
 }
 
 .params h2 {
@@ -269,14 +303,6 @@ body {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.more {
-	background-color: #81b3d2;
-}
-
-.reserv {
-	background-color: #766357;
-}
-
 .result a {
 	color: white;
 	font-weight: bold;
@@ -307,4 +333,419 @@ body {
 
 .score p {
 	color: #666666;
+}
+
+/* сетка */
+
+.header {
+	display: flex;
+	position: relative;
+	width: 1200px;
+	margin: 0px auto;
+}
+
+.intro {
+	position: relative;
+	top: -55px;
+	height: 510px;
+	background: blue;
+	z-index: -1;
+	margin-bottom: 58px;
+}
+
+.main-navigation {
+	width: 100%;
+	background: white;
+	margin-bottom: 1px;
+	
+	
+}
+
+.site-navigation {
+	display: flex;
+	background: white;
+	padding: 0px;
+	justify-content: space-between;
+}
+
+.site-navigation li {
+	
+	display: block;
+	width: 200px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.site-navigation li:first-child {
+	padding-left: 70px;
+	text-align: left;
+}
+
+.site-navigation li:last-child {
+	padding-right: 70px;
+	text-align: right;
+}
+
+.site-navigation li:nth-child(2) {
+	margin-right: 200px;
+	text-align: center;
+	
+}
+
+.logo {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.container {
+	width: 1200px;
+	margin: 0px auto;
+}
+
+.description_header {
+	position: relative;
+	margin-right: auto;
+    margin-left: auto;
+	margin-bottom: 27px;
+}
+
+.description_reasons {
+	position: relative;
+	margin-right: auto;
+    margin-left: auto;
+	width: 490px;
+	margin-bottom: 52px;
+}
+
+.reason {
+	display: flex;
+	height: 256px;
+}
+
+.reason_text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 400px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 25px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+.reason_text h3 {
+	margin-bottom: 24px;
+}
+
+.reason_text span {
+	margin-bottom: 7px;
+}
+
+.reason_text p {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.feature {
+	margin-bottom: 65px;
+	/*background: blue;*/
+}
+
+.feture_wrapper {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+.house, .food, .souvenir {
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+	text-align: center;
+	margin-top: 60px;
+	/*background: pink;*/
+}
+
+.house_icon {
+	/*background: yellow;*/
+	width: 75px;
+	height: 76px;
+	margin-left: 162px;
+}
+
+.food_icon {
+	
+}
+
+.reverse .reason_text{
+	order: 1;
+}
+
+.reason_grey_wrapper {
+	display: flex;
+	justify-content: space-around;
+	background: #eeeeee;
+}
+
+.grey .reason_text {
+	width: 400px;
+	margin: auto;
+}
+
+.find h2 {
+	text-align: center;
+	margin-top: 55px;
+}
+
+.find p {
+	position: relative;
+	margin-right: auto;
+    margin-left: auto;
+	width: 450px;
+	text-align: center;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+.link {
+	width: 568px;
+	position: relative;
+	margin-right: auto;
+    margin-left: auto;
+	text-align: center;
+}
+
+.map_background form{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 568px;
+	background: white;
+	margin-right: auto;
+    margin-left: auto;
+	padding-top: 55px;
+	align-items: flex-start;
+}
+
+.map_background label {
+	padding-left: 55px;
+	padding-bottom: 30px;
+}
+
+.button_find button {
+	width: 458px;
+	position: relative;
+	margin-right: 55px;
+    margin-left: 55px;
+	padding-top: 18px;
+	padding-bottom: 20px;
+	margin-bottom: 55px;
+}
+
+.footer {
+	position: relative;
+	width: 1200px;
+	margin: 0px auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	margin-top: 35px;
+	padding-bottom: 35px;
+}
+
+.hashtag {
+	margin-left: 130px;
+}
+
+.social {
+	display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.social-tw {
+    background: #81b3d2 url("../img/twitter.svg") no-repeat 50% 50%;
+}
+
+.social-fb {
+	background: #81b3d2 url("../img/fb-icon.svg") no-repeat 50% 50%;
+}
+
+.social-y {
+    background: #81b3d2 url("../img/youtube.svg") no-repeat 50% 50%;
+}
+
+.copyright_wrapper {
+	margin-right: 100px;
+	display: flex;
+	justify-content: space-between;
+	width: 195px;
+}
+
+.academy {
+	padding-top: 10px;
+}
+
+.infrastructure h2 {
+	margin: 0px 0px;
+	padding-bottom: 25px;
+}
+
+.infrastructure {
+	width: 145px;
+	margin-left: 70px;
+	margin-bottom: 30px;
+	padding-top: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.pool, .parking  {
+	margin-bottom: 23px;
+}
+
+.type_of_housing h2 {
+	margin: 0px 0px;
+	padding-bottom: 25px;
+}
+
+.type_of_housing {
+	width: 145px;
+	margin-left: 110px;
+	margin-bottom: 30px;
+	padding-top: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.hotel, .motel {
+	margin-bottom: 23px;
+}
+
+.price h2 {
+	margin: 0px 0px;
+	padding-bottom: 10px;
+}
+
+.price {
+	width: 320px;
+	margin-left: 340px;
+	margin-bottom: 30px;
+	margin-right: 70px;
+	padding-top: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.price .min, .price .max {
+	width: 150px;
+	margin-bottom: 10px;
+} 
+
+.range {
+	margin-bottom: 20px;
+	width: 310px;
+}
+
+.params_form {
+	display: flex;
+}
+
+.sorting {
+	display: flex;
+	align-items: center;
+	margin-left: 70px;
+	margin-bottom: 30px;
+}
+
+.sorting-list {
+	display: flex;
+	padding: 0px;
+	margin-left: 40px;
+}
+
+.sorting-list li:not(:nth-child(4)):not(:last-child) {
+	padding-right: 30px;
+}
+
+.sorting-list li:nth-child(3) {
+	margin-right: 478px;
+}
+
+.sorting-list li:nth-child(4) a, .sorting-list li:nth-child(5) a {
+	
+	padding-right: 12px;
+	border-bottom: none;
+	
+}
+
+.sorting_option {
+	margin-left: 50px;
+	display: flex;
+}
+
+.result {
+	display: flex;
+	align-items: flex-start;
+}
+
+.hotel_foto {
+	margin-left: 70px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.hotel_info {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin-left: 30px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding-bottom: 0px;
+	width: 100%;
+}
+
+.hotel_info h2 {
+	margin: 0px 0px;
+	padding-top: 0px;
+	padding-bottom: 10px;
+}
+
+.rating {
+	margin-right: 70px;
+	margin-left: 50px;
+	margin-top: 30px;
+	width: 135px;
+}
+
+.score p {
+	margin: 0px;
+	margin-top: 47px;
+}
+
+.min_price {
+	position: absolute;
+	left: 115px;
+}
+
+.more a {
+	display: inline-block;
+	width: 110px;
+	height: 27px;
+	background: #81b3d2;
+	text-align: center;
+}
+
+.reserv a {
+	display: inline-block;
+	width: 110px;
+	height: 27px;
+	background-color: #766357;
+	text-align: center;
+	margin-top: 10px;
 }
