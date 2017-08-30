@@ -5,6 +5,7 @@ body {
 	color: black;
 	font-weight: normal;
 	font-family: "PT Sans", Arial, sans-serif;
+	min-width: 768px;
 }
 
 .visually_hidden {
@@ -338,16 +339,47 @@ body {
 	margin: 0px auto;
 }
 
+.intro {
+	position: relative;
+	top: -55px;
+	height: 510px;
+	background: blue;
+	z-index: -1;
+}
+
 .main-navigation {
 	width: 100%;
-	margin-right: 70px;
-	margin-left: 70px;
+	background: white;
+	background: red;
 }
 
 .site-navigation {
 	display: flex;
-	justify-content: space-between;
-	padding-left: 0px;
+	
+	background: white;
+	padding: 0px;
+	
+}
+
+.site-navigation li {
+	background: pink;
+	display: block;
+	width: 200px;
+	box-sizing: border-box;
+	padding: 0px;
+}
+
+.site-navigation li:first-child {
+	margin-left: 70px;
+}
+
+.site-navigation li:last-child {
+	
+}
+
+.site-navigation li:nth-child(2) {
+	margin-right: 200px;
+	text-align: center;
 }
 
 .logo {
@@ -361,9 +393,7 @@ body {
 	margin: 0px auto;
 }
 
-.intro {
-	margin-bottom: -185px;
-}
+
 
 .description_header {
 	position: relative;
@@ -387,7 +417,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 285px;
+	width: 400px;
 	margin-right: auto;
 	margin-left: auto;
 	padding-top: 25px;
@@ -482,6 +512,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
+	margin-top: 35px;
 }
 
 .hashtag {
@@ -513,6 +544,10 @@ body {
 	display: flex;
 	justify-content: space-between;
 	width: 195px;
+}
+
+.academy {
+	padding-top: 10px;
 }
 
 .infrastructure h2 {
@@ -593,8 +628,21 @@ body {
 	margin-left: 40px;
 }
 
-.sorting-list li{
+
+
+.sorting-list li:not(:nth-child(4)):not(:last-child) {
 	padding-right: 30px;
+}
+
+.sorting-list li:nth-child(3) {
+	margin-right: 478px;
+}
+
+.sorting-list li:nth-child(4) a, .sorting-list li:nth-child(5) a {
+	
+	padding-right: 12px;
+	border-bottom: none;
+	
 }
 
 .sorting_option {
@@ -604,7 +652,6 @@ body {
 
 .result {
 	display: flex;
-	margin-bottom: 10px;
 	align-items: flex-start;
 }
 
@@ -622,6 +669,7 @@ body {
 	margin-top: 30px;
 	margin-bottom: 30px;
 	padding-bottom: 0px;
+	width: 100%;
 }
 
 .hotel_info h2 {
@@ -632,8 +680,9 @@ body {
 
 .rating {
 	margin-right: 70px;
-	margin-left: 580px;
+	margin-left: 50px;
 	margin-top: 30px;
+	width: 135px;
 }
 
 .score p {
