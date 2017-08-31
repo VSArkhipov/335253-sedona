@@ -39,31 +39,49 @@
 						<div class="infrastructure">
 							<h2>Инфраструктура:</h2>
 							<div class="pool">
-								<input type="checkbox" name="pool" id="pool-field" checked>
-								<label for="pool-field">Бассейн</label>
+								<label>
+									<input class="checkbox" type="checkbox" name="pool" id="pool-field" checked>
+									<span class="checkbox-custom"></span>
+									<span class="label">Бассейн</span>
+								</label>
 							</div>
 							<div class="parking">
-								<input type="checkbox" name="parking" id="parking-field">
-								<label for="parking-field">Парковка</label>
+								<label>
+									<input class="checkbox" type="checkbox" name="parking" id="parking-field">
+									<span class="checkbox-custom"></span>
+									<span class="label">Парковка</span>
+								</label>
 							</div>	
 							<div class="wifi">
-								<input type="checkbox" name="wifi" id="wifi-field">
-								<label for="wifi-field">WI-FI</label>
+								<label>
+									<input class="checkbox" type="checkbox" name="wifi" id="wifi-field">
+									<span class="checkbox-custom"></span>
+									<span class="label">WI-FI</span>
+								</label>
 							</div>
 						</div>
 						<div class="type_of_housing">
 							<h2>Тип жилья:</h2>
 							<div class="hotel">
-								<input type="checkbox" name="hotel" id="hotel-field" checked>
-								<label for="hotel-field">Отель</label>
+								<label>
+									<input class="checkbox" type="checkbox" name="hotel" id="hotel-field" checked>
+									<span class="checkbox-custom"></span>
+									<span class="label">Гостиница</span>
+								</label>
 							</div>
 							<div class="motel">
-								<input type="checkbox" name="motel" id="motel-field" checked>
-								<label for="motel-field">Мотель</label>
+								<label>
+									<input class="checkbox" type="checkbox" name="motel" id="motel-field" checked>
+									<span class="checkbox-custom"></span>
+									<span class="label">Мотель</span>
+								</label>
 							</div>
 							<div class="apartments">
-								<input type="checkbox" name="apartments" id="apartments-field" checked>
-								<label for="apartments-field">Апартаменты</label>
+								<label>
+								<input class="checkbox" type="checkbox" name="apartments" id="apartments-field" checked>
+								<span class="checkbox-custom"></span>
+								<span class="label">Апартаменты</span>
+								</label>
 							</div>
 						</div>
 						<div class="price">
@@ -95,11 +113,11 @@
 							<li>
 								<a href="#">По рейтингу</a>
 							</li>
-							<li>
-								<a href="#"><img src="img/icon-up-dir.svg" alt="по возрастанию" width="" height=""></a>
+							<li class="dir">
+								<a href="#"><svg id="icon-up-dir" data-name="icon-up-dir" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#cacaca" d="M5.5 0L0 10h11z"/></svg></a>
 							</li>
-							<li>
-								<a href="#"><img src="img/icon-down-dir.svg" alt="по убыванию" width="" height=""></a>
+							<li class="dir active">
+								<a href="#"><svg id="icon-down-dir" data-name="icon-down-dir" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#81b3d2" d="M5.5 10L0 0h11"/></svg></a>
 							</li>
 						</ul>
 					</div>
@@ -149,7 +167,7 @@
 						</div>
 					</div>
 				</section>
-				<section class="result">
+				<section class="result result_last">
 					<div class="hotel_foto">
 						<img src="img/villas_at_poco_diablo.jpg" alt="Фото гостиницы Villas at poco diablo" width="135" height="100%">
 					</div>

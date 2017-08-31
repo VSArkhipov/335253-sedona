@@ -95,7 +95,7 @@
 							<h2 class="visually_hidden">Третья причина</h2>
 							<div class="reason_text">
 								<h3>Небольшая площадь</h3>
-								<span>- № 3 -</span>
+								<span>&mdash; №3 &mdash;</span>
 								<p>Все достопримечательности находятся очень близко</p>
 							</div>
 						</div>
@@ -105,7 +105,7 @@
 							<h2 class="visually_hidden">Четвертая причина</h2>
 							<div class="reason_text">
 								<h3>Красивая дорога</h3>
-								<span>- № 4 -</span>
+								<span>&mdash; №4 &mdash;</span>
 								<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 							</div>
 						</div>	
@@ -115,7 +115,7 @@
 							<h2 class="visually_hidden">Пятая причина</h2>
 							<div class="reason_text">
 								<h3>Мало туристов</h3>
-								<span>- № 5 -</span>
+								<span>&mdash; №5 &mdash;</span>
 								<p>Большинство едет в Гранд Каньон и толпится там</p>
 							</div>
 						</div>	
@@ -137,12 +137,14 @@
 								<label>Дата выезда: 
 									<input type="date" name="departure" id="departure-field" value="4 июля 2017">
 								</label>
-								<label>Взрослые: 
-									<input type="number" name="grownups" id="grownups-field" value="2" min="1">
-								</label>
-								<label>Дети: 
-									<input type="number" name="children" id="children-field" value="0" min="0">
-								</label>
+								<div class="number">
+									<label>Взрослые: 
+										<input type="text" name="grownups" id="grownups-field" value="2" min="1" class="grownups">
+									</label>
+									<label>Дети: 
+										<input type="text" name="children" id="children-field" value="0" min="0" class="children">
+									</label>
+								</div>
 								<div class="button_find">
 									<button>Найти</button>
 								</div>
