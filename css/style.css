@@ -118,13 +118,14 @@ body {
 
 .map {
 	background: url("../img/map.jpg") no-repeat;
-	padding-bottom: 80px;
-	margin-bottom: 35px;
+
 }
 
 .link {
 	background-color: #766357;
 	margin-top: 50px;
+	
+
 }
 
 .link a{
@@ -243,6 +244,7 @@ body {
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: normal;
+	cursor: pointer;
 }
 
 .params button:hover, .params button:focus {
@@ -562,48 +564,154 @@ body {
 	margin-top: 47px;
 }
 
-.map_background form{
+.map {
+	padding-bottom: 198px;
+	
+}
+
+.map form {
 	display: flex;
+	align-items: space-between;
 	flex-direction: column;
-	text-align: center;
 	width: 568px;
 	background: white;
 	margin-right: auto;
     margin-left: auto;
-	padding-top: 60px;
-	align-items: flex-start;
 	box-shadow: 0px 0px 7px 0 rgba(0, 0, 0, 0.35);
+	padding-top: 55px;	
+	
 }
 
-.map_background label {
-	margin-left: 55px;
-	margin-bottom: 40px;
-}
-
-.map_background input {
+.map input {
 	text-transform: uppercase;
-	font-size: 14px;
-	line-height: 26px;
-	color: black;
-	font-weight: bold;
-	font-family: "PT Sans", Arial, sans-serif;
-	width: 310px;
+	font: inherit;
 	border: none;
-	margin-left: 20px;
-	padding-left: 15px;
+	background: #f2f2f2;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 13px;
+}
+
+.in input {
+	margin-left: 21px;
+	width: 304px;
+}
+
+.out input {
+	margin-left: 18px;
+	width: 304px;
+}
+
+.calendar {
+	
+	background: #f2f2f2;
+	padding-right: 9px;
+	padding-top: 8px;
+}
+
+.calendar a:hover svg path, .academy a:focus svg path {
+	fill: black;
+}
+
+.calendar a:active svg path {
+	fill: #81b3d2;
+}
+
+.in, .out, .number {
+	display: flex;
+	margin-left: 55px;
+	margin-right: 55px;
+	margin-bottom: 30px;
+	align-items: center;
 }
 
 .number {
-	margin-bottom: 55px;
+	margin-bottom: 53px;
+}
+
+.number input {
+	width: 38px;
+	text-align: center;
+	vertical-align: middle;
 	padding-left: 0px;
+	
 }
 
-.number .grownups {
-	margin-left: 36px;
+.grownups input {
+	margin-left: 72px;
+	
 }
 
-.map_background .grownups, .map_background .children {
-	width: 100px;
+.number .grownups::before {
+	content: "–";
+	position: absolute;
+	width: 26px;
+	padding-top: 3px;
+	padding-bottom: 9px;
+	background: #f2f2f2;
+	left: 553px;
+	font-size: 24px;
+	padding-left: 14px;
+	color: #818181;
+}
+
+.number .grownups::after {
+	content: "+";
+	position: absolute;
+	width: 38px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	background: #f2f2f2;
+	left: 630px;
+	font-size: 24px;
+	text-align: center;
+	color: #818181;
+}
+
+.children {
+	margin-left: 93px;
+	padding-right: 0px;
+	
+}
+
+.children input {
+	margin-left: 61px;
+	
+}
+
+.number .children::before {
+	content: "–";
+	position: absolute;
+	width: 27px;
+	padding-top: 3px;
+	padding-bottom: 9px;
+	background: #f2f2f2;
+	font-size: 24px;
+	padding-left: 13px;
+	left: 787px;
+	color: #818181;
+	
+}
+
+.number .children::after {
+	content: "+";
+	position: absolute;
+	width: 38px;
+	background: #f2f2f2;
+	left: 863px;
+	font-size: 24px;
+	text-align: center;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	color: #818181;
+}
+
+.number .children:hover::after, .number .children:hover::before, .number .grownups:hover::after, .number .grownups:hover::before {
+	color: black;
+}
+
+.number .children:active::after, .number .children:active::before, .number .grownups:active::after, .number .grownups:active::before {
+	color: #81b3d2;
 }
 
 .button_find button {
@@ -611,32 +719,42 @@ body {
 	position: relative;
 	margin-right: 55px;
     margin-left: 55px;
-	padding-top: 18px;
-	padding-bottom: 20px;
+	padding-top: 16px;
+	padding-bottom: 16px;
 	margin-bottom: 55px;
 }
 
 .footer {
-	position: relative;
+	position: absolute;
 	width: 1200px;
 	margin: 0px auto;
 	display: flex;
 	justify-content: space-between;
-	align-items: baseline;
+	align-items: center;
 	margin-top: 35px;
 	padding-bottom: 35px;
+	padding-top: 35px;
+	background: white;
+	top: 2607px;
+	background: rgba(255,255,255,0.9)
 }
 
 .hashtag {
 	margin-left: 130px;
 }
 
-.social {
+.soc {
+	display: flex;
+	margin-left: 32px;
+}
+
+	.social {
 	display: inline-block;
-    width: 40px;
-    height: 40px;
-    margin-right: 5px;
-    vertical-align: middle;
+    width: 46px;
+    height: 48px;
+    margin-right: 6px;
+    margin-top: 6px;
+	background:green;
 }
 
 .social-tw {
@@ -652,7 +770,8 @@ body {
 }
 
 .copyright_wrapper {
-	margin-right: 100px;
+	margin-right: 104px;
+	
 	display: flex;
 	justify-content: space-between;
 	width: 195px;
@@ -660,6 +779,7 @@ body {
 
 .academy {
 	padding-top: 10px;
+	
 }
 
 .infrastructure h2 {
@@ -716,11 +836,13 @@ body {
 .price .min, .price .max {
 	width: 150px;
 	margin-bottom: 10px;
+	cursor: pointer;
 } 
 
 .range {
 	margin-bottom: 20px;
 	width: 310px;
+	cursor: pointer;
 }
 
 .params_form {
@@ -764,7 +886,7 @@ body {
 	border-top: 1px solid #e5e5e5;
 }
 
-.result_last {
+.result:last-child {
 	border-bottom: 1px solid #e5e5e5;
 }
 
@@ -833,7 +955,7 @@ body {
 	position: relative;
 	width: 23px;
 	height: 23px;
-	background: url("../img/checkbox-off.svg") no-repeat 50% 50%;
+	
 }
 
 .checkbox-custom, .label {
@@ -841,7 +963,16 @@ body {
     vertical-align: middle;
 }
 
-.checkbox:checked + .checkbox-custom::before {
+.checkbox:not(:checked):disabled + .checkbox-custom::before {
+	content: "";
+	display: block;
+	position: relative;
+	width: 23px;
+	height: 23px;
+	background: url("../img/checkbox-off-disabled.svg") no-repeat 50% 50%;
+}
+
+.checkbox:not(:disabled):checked + .checkbox-custom::before {
 	content: "";
 	display: block;
 	position: relative;
@@ -850,16 +981,16 @@ body {
 	background: url("../img/checkbox-on.svg") no-repeat 50% 50%;
 }
 
-.checkbox:disabled + .checkbox-custom::before {
+.checkbox:not(:checked) + .checkbox-custom::before {
 	content: "";
 	display: block;
 	position: relative;
 	width: 23px;
 	height: 23px;
-	background: url("../img/checkbox-off-disabled.svg") no-repeat 50% 50%;
+	background: url("../img/checkbox-off.svg") no-repeat 50% 50%;
 }
-	 
-.checkbox:checked:disabled + .checkbox-custom::before { /*не весь чек-бокс закрасился*/
+
+.checkbox:checked + .checkbox-custom::before {
 	content: "";
 	display: block;
 	position: relative;
