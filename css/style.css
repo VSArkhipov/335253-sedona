@@ -6,7 +6,7 @@ body {
 	font-weight: normal;
 	font-family: "PT Sans", Arial, sans-serif;
 	min-width: 768px;
-	background: white;
+	
 }
 
 .visually_hidden {
@@ -158,7 +158,7 @@ body {
 	font-weight: bold;
 }
 
-.button_find button:hover, .button button:focus {
+.button_find button:hover, button button:focus {
 	background-color: #669ec0;
 }
 
@@ -566,12 +566,10 @@ body {
 
 .map {
 	padding-bottom: 198px;
-	
 }
 
 .map form {
 	display: flex;
-	align-items: space-between;
 	flex-direction: column;
 	width: 568px;
 	background: white;
@@ -585,25 +583,26 @@ body {
 .map input {
 	text-transform: uppercase;
 	font: inherit;
-	border: none;
+	border: 2px solid #f2f2f2;
 	background: #f2f2f2;
-	padding-top: 6px;
-	padding-bottom: 6px;
+	padding-top: 4px;
+	padding-bottom: 4px;
 	padding-left: 13px;
+	outline: none;
 }
 
 .in input {
-	margin-left: 21px;
+	margin-left: 17px;
 	width: 304px;
+	
 }
 
 .out input {
-	margin-left: 18px;
+	margin-left: 14px;
 	width: 304px;
 }
 
 .calendar {
-	
 	background: #f2f2f2;
 	padding-right: 9px;
 	padding-top: 8px;
@@ -634,15 +633,53 @@ body {
 	text-align: center;
 	vertical-align: middle;
 	padding-left: 0px;
-	
 }
 
-.grownups input {
-	margin-left: 72px;
-	
+.grownups, .children {
+	display: flex;
+	align-items: center;
 }
 
-.number .grownups::before {
+.number button {
+	width: 38px;
+	height: 38px;
+	border: none;
+	background: #f2f2f2;
+	font-size: 24px;
+	color: #818181;
+	outline: 0;
+}
+
+.grownups button:first-child {
+	margin-left: 34px;
+}
+
+.grownups button:last-child {
+	margin-right: 54px;
+}
+
+.children button:first-child {
+	margin-left: 22px;
+}
+
+.number button:hover, .number button:focus {
+	color: black;
+}
+
+.number button:active {
+	color: #81b3d2;
+}
+
+.map input:hover {
+	background: #ebebeb;
+}
+
+.map input:focus {
+	background: white;
+	border: 2px solid #e5e5e5;
+}
+
+/*.number .grownups::before {
 	content: "–";
 	position: absolute;
 	width: 26px;
@@ -668,17 +705,6 @@ body {
 	color: #818181;
 }
 
-.children {
-	margin-left: 93px;
-	padding-right: 0px;
-	
-}
-
-.children input {
-	margin-left: 61px;
-	
-}
-
 .number .children::before {
 	content: "–";
 	position: absolute;
@@ -695,15 +721,16 @@ body {
 
 .number .children::after {
 	content: "+";
-	position: absolute;
-	width: 38px;
+	position: relative;
+	display: inline-block;
+	width: 34px;
 	background: #f2f2f2;
-	left: 863px;
 	font-size: 24px;
 	text-align: center;
 	padding-top: 6px;
 	padding-bottom: 6px;
-	color: #818181;
+	background: #818181;
+	
 }
 
 .number .children:hover::after, .number .children:hover::before, .number .grownups:hover::after, .number .grownups:hover::before {
@@ -712,7 +739,7 @@ body {
 
 .number .children:active::after, .number .children:active::before, .number .grownups:active::after, .number .grownups:active::before {
 	color: #81b3d2;
-}
+}*/
 
 .button_find button {
 	width: 458px;
@@ -722,10 +749,11 @@ body {
 	padding-top: 16px;
 	padding-bottom: 16px;
 	margin-bottom: 55px;
+	/*outline: none; */
 }
 
 .footer {
-	position: absolute;
+	position: relative;
 	width: 1200px;
 	margin: 0px auto;
 	display: flex;
@@ -735,7 +763,7 @@ body {
 	padding-bottom: 35px;
 	padding-top: 35px;
 	background: white;
-	top: 2607px;
+	top: -158px;
 	background: rgba(255,255,255,0.9)
 }
 
@@ -748,7 +776,7 @@ body {
 	margin-left: 32px;
 }
 
-	.social {
+.social {
 	display: inline-block;
     width: 46px;
     height: 48px;
@@ -839,6 +867,12 @@ body {
 	cursor: pointer;
 } 
 
+.price input {
+	background: none;
+	color: white;
+	border: 2px solid white;
+}
+
 .range {
 	margin-bottom: 20px;
 	width: 310px;
@@ -884,10 +918,12 @@ body {
 	display: flex;
 	align-items: flex-start;
 	border-top: 1px solid #e5e5e5;
+	
 }
 
 .result:last-child {
 	border-bottom: 1px solid #e5e5e5;
+	margin-bottom: 140px;
 }
 
 .hotel_foto {
