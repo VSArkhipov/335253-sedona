@@ -158,7 +158,7 @@ body {
 	font-weight: bold;
 }
 
-.button_find button:hover, button button:focus {
+.button_find button:hover, .button_find button:focus {
 	background-color: #669ec0;
 }
 
@@ -695,16 +695,11 @@ body {
 	padding-bottom: 3px;
 }
 
-.grownups .minus:hover, .grownups .minus:focus {
+.grownups .minus:hover, .grownups .minus:focus, .grownups .plus:hover, .grownups .plus:focus, .children .minus:hover, .children .minus:focus, .children .plus:hover, .children .plus:focus {
 	color: black;
 }
 
-.pl:hover {
-	color: black;
-}
-
-
-.number button:active {
+.grownups .minus:active, .grownups .plus:active, .children .minus:active, .children .plus:active {
 	color: #81b3d2;
 }
 
