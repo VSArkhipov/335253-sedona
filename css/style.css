@@ -209,15 +209,16 @@ body {
 	text-transform: uppercase;
 	line-height: normal;
 	font-weight: bold;
+	text-align: center;
 }
 
-.params input:hover {
-    background-color: #ebebeb;
+/*.params input:hover {
+    background-color: #ebebeb;			
 }
 
 .params input:focus {
 	background-color: #ffffff;
- }
+ }*/
  
 .params {
 	background: url("../img/fon.jpg") no-repeat #0066cc;
@@ -234,6 +235,7 @@ body {
 .params label {
 	line-height: 21px;
 	color: white;
+	cursor: pointer;
 }
 
 .params button {
@@ -358,7 +360,7 @@ body {
 
 .intro {
 	position: relative;
-	top: -55px;
+	top: -56px;
 	height: 510px;
 	background: blue;
 	z-index: -1;
@@ -368,13 +370,14 @@ body {
 .main-navigation {
 	width: 100%;
 	background: white;
-	margin-bottom: 1px;
+	margin-bottom: 0px;
 }
 
 .site-navigation {
 	display: flex;
 	background: white;
 	padding: 0px;
+	padding-bottom: 2px;
 	justify-content: space-between;
 }
 
@@ -386,18 +389,25 @@ body {
 }
 
 .site-navigation li:first-child {
-	padding-left: 70px;
+	padding-left: 71px;
 	text-align: left;
 }
 
 .site-navigation li:last-child {
-	padding-right: 70px;
+	padding-right: 72px;
 	text-align: right;
 }
 
 .site-navigation li:nth-child(2) {
 	margin-right: 200px;
+	text-align: left;
+	padding-left: 45px;
+}
+
+.site-navigation li:nth-child(3) {
+	
 	text-align: center;
+	padding-left: 14px;
 }
 
 .logo {
@@ -423,7 +433,7 @@ body {
 	margin-right: auto;
     margin-left: auto;
 	width: 490px;
-	margin-bottom: 52px;
+	margin-bottom: 51px;
 }
 
 .reason {
@@ -565,7 +575,7 @@ body {
 }
 
 .map {
-	padding-bottom: 198px;
+	padding-bottom: 201px;
 }
 
 .map form {
@@ -587,19 +597,35 @@ body {
 	background: #f2f2f2;
 	padding-top: 4px;
 	padding-bottom: 4px;
-	padding-left: 13px;
+	padding-left: 10px;
 	outline: none;
 }
 
 .in input {
-	margin-left: 17px;
-	width: 304px;
+	
+	width: 301px;
 	
 }
 
+.date_in {
+	width: 112px;
+}
+
 .out input {
-	margin-left: 14px;
-	width: 304px;
+	
+	width: 301px;
+}
+
+.date_out {
+	width: 112px;
+}
+
+.date_grownups {
+	width: 112px;
+}
+
+.date_children {
+	width: 65px;
 }
 
 .calendar {
@@ -620,19 +646,25 @@ body {
 	display: flex;
 	margin-left: 55px;
 	margin-right: 55px;
-	margin-bottom: 30px;
+	margin-bottom: 29px;
 	align-items: center;
+	flex-wrap: wrap;
+}
+
+.out {
+	margin-bottom: 30px;
 }
 
 .number {
-	margin-bottom: 53px;
+	margin-bottom: 54px;
 }
 
 .number input {
-	width: 38px;
+	width: 34px;
 	text-align: center;
 	vertical-align: middle;
 	padding-left: 0px;
+	padding-right: 0px;
 }
 
 .grownups, .children {
@@ -650,21 +682,27 @@ body {
 	outline: 0;
 }
 
-.grownups button:first-child {
-	margin-left: 34px;
+.grownups .minus {
+	/*margin-left: 34px;*/
+	padding-bottom: 3px;
 }
 
-.grownups button:last-child {
-	margin-right: 54px;
+.grownups .plus {
+	margin-right: 53px;
 }
 
-.children button:first-child {
-	margin-left: 22px;
+.children .minus {
+	padding-bottom: 3px;
 }
 
-.number button:hover, .number button:focus {
+.grownups .minus:hover, .grownups .minus:focus {
 	color: black;
 }
+
+.pl:hover {
+	color: black;
+}
+
 
 .number button:active {
 	color: #81b3d2;
@@ -672,6 +710,7 @@ body {
 
 .map input:hover {
 	background: #ebebeb;
+	border: 2px solid #ebebeb;
 }
 
 .map input:focus {
@@ -759,7 +798,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: 35px;
+	margin-top: 32px;
 	padding-bottom: 35px;
 	padding-top: 35px;
 	background: white;
@@ -768,12 +807,12 @@ body {
 }
 
 .hashtag {
-	margin-left: 130px;
+	margin-left: 132px;
 }
 
 .soc {
 	display: flex;
-	margin-left: 32px;
+	margin-left: 33px;
 }
 
 .social {
@@ -781,7 +820,7 @@ body {
     width: 46px;
     height: 48px;
     margin-right: 6px;
-    margin-top: 6px;
+    margin-top: 2px;
 	background:green;
 }
 
@@ -798,7 +837,7 @@ body {
 }
 
 .copyright_wrapper {
-	margin-right: 104px;
+	margin-right: 102px;
 	
 	display: flex;
 	justify-content: space-between;
@@ -806,13 +845,14 @@ body {
 }
 
 .academy {
-	padding-top: 10px;
+	padding-top: 9px;
 	
 }
 
 .infrastructure h2 {
 	margin: 0px 0px;
 	padding-bottom: 25px;
+	margin-top
 }
 
 .infrastructure {
@@ -865,6 +905,7 @@ body {
 	width: 150px;
 	margin-bottom: 10px;
 	cursor: pointer;
+	
 } 
 
 .price input {
@@ -873,10 +914,19 @@ body {
 	border: 2px solid white;
 }
 
+.price input:last-child {
+	margin-right: 
+}
+
 .range {
 	margin-bottom: 20px;
 	width: 310px;
 	cursor: pointer;
+	border: none;
+}
+
+.button_show {
+	text-align: center;
 }
 
 .params_form {
