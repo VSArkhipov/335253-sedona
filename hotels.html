@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 		<link href="css/normalize.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
+		<link href="css/style mini.css" rel="stylesheet">
 		<title>Седона - отели</title>
 	</head>
 	<body>
@@ -95,7 +95,13 @@
 									</label>
 								</div>
 							</div>
-							<input type="range" class="range" min="0" max="3000">
+							<div class="range-controls">
+								<div class="scale">
+									<div class="bar"></div>
+								</div>
+								<div class="range-toggle range-toggle-min"></div>
+								<div class="range-toggle range-toggle-max"></div>
+							</div>
 							<div class="button_show">
 								<button type="button">Показать</button>
 							</div>
@@ -111,7 +117,7 @@
 						<p>Сортировка:</p>
 						<ul class="sorting-list">
 							<li>
-								<a href="#" class="current">По цене</a>
+								<a class="current">По цене</a>
 							</li>
 							<li>
 								<a href="#">По типу</a>
@@ -122,7 +128,7 @@
 							<li class="dir">
 								<a href="#"><svg id="icon-up-dir" data-name="icon-up-dir" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#cacaca" d="M5.5 0L0 10h11z"/></svg></a>
 							</li>
-							<li class="dir active">
+							<li class="dir_active">
 								<a href="#"><svg id="icon-down-dir" data-name="icon-down-dir" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#81b3d2" d="M5.5 10L0 0h11"/></svg></a>
 							</li>
 						</ul>
