@@ -452,7 +452,7 @@ body {
 	margin-top: 0px;
 }
 
-.find h2{
+.find h2 {
 	font-size: 30px;
 	line-height: 24px;
 	font-weight: bold;
@@ -473,7 +473,7 @@ body {
 	margin-top: 47px;
 }
 
-.link a{
+.link a {
 	display: inline-block;
 	width: 568px;
 	font-size: 21px;
@@ -495,7 +495,126 @@ body {
 
 .map {
 	background: url("../img/map.jpg") no-repeat;
-	padding-bottom: 201px;
+	height: 596px;
+}
+
+.map iframe {
+	border: none;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+  }
+
+  70% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+
+  90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-80px);
+            transform: translateY(-80px);
+  }
+
+  70% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+
+  90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+.modal-show {
+	z-index: 1;
+	position: absolute;
+	width: 100%;
+	top: -593px;
+	-webkit-animation: bounce 0.6s;
+	        animation: bounce 0.6s;
+}
+.modal-wrapper {
+	position: relative;
+}
+
+.modal-hidden {
+	display: none;
+}
+
+.modal-error {
+	-webkit-animation: shake 0.6s;
+	        animation: shake 0.6s;
 }
 
 .map form {
@@ -513,6 +632,7 @@ body {
 	-webkit-box-shadow: 0px 0px 7px 0 rgba(0, 0, 0, 0.35);
 	        box-shadow: 0px 0px 7px 0 rgba(0, 0, 0, 0.35);
 	padding-top: 55px;	
+	left: 50%;
 }
 
 .map input {
@@ -633,7 +753,7 @@ body {
 	position: absolute;
 	padding-right: 9px;
 	padding-top: 8px;
-	right: 445px;
+	right: 371px;
 }
 
 .calendar a:hover svg path {
