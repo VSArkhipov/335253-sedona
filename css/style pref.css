@@ -214,12 +214,16 @@ body {
 	padding-top: 9px;
 }
 
-.academy a:hover svg path, .academy a:focus svg path {
-	fill: #81b3d2;
+.academy a {
+	color: black;
 }
 
-.academy a:active svg path {
-	fill: #bdbbbc;
+.academy a:hover, .academy a:focus{
+	color: #81b3d2;
+}
+
+.academy a:active {
+	color: #bdbbbc;
 }
 
 /*index.html*/
@@ -415,7 +419,7 @@ body {
 	background: #eeeeee;
 }
 
-.grey_wrapper .reason_text p {
+.grey_wrapper p {
 	margin-left: 60px;
 	margin-right: 60px;
 }
@@ -430,7 +434,7 @@ body {
 	margin: auto;
 }
 
-.grey .reason_text h3 {
+.grey h3 {
 	color: black;
 }
 
@@ -484,7 +488,7 @@ body {
 	padding-bottom: 30px;
 }
 
-.link:hover, .link a:focus {
+.link a:hover, .link a:focus {
 	background-color: #604e43;
 }
 
@@ -756,12 +760,16 @@ body {
 	right: 371px;
 }
 
-.calendar a:hover svg path {
-	fill: black;
+.calendar a {
+	color: #cacaca;
 }
 
-.calendar a:active svg path {
-	fill: #81b3d2;
+.calendar a:hover {
+	color: black;
+}
+
+.calendar a:active {
+	color: #81b3d2;
 }
 
 .button_find button {
@@ -1135,29 +1143,33 @@ body {
 	border-bottom: none;
 }
 
-.dir a:hover svg path, .dir a:focus svg path {
-	fill: #231F20;
+.dir {
+	color: #cacaca;
 }
 
-.dir a:active svg path {
-	fill: #81b3d2;
+.dir a:hover, .dir a:focus {
+	color: #231F20;
+}
+
+.dir a:active {
+	color: #81b3d2;
 }
 
 .found {
 	margin-left: 2px;
 }
 
-.hotel_info h2 a {
+.hotel_info h2 {
 	font-size: 21px;
 	font-weight: bold;
 	color: black;
 }
 
-.hotel_info h2 a:hover, .hotel_info h2 a:focus {
+.hotel_info h2:hover, .hotel_info h2:focus {
 	color: #81b3d2;
 }
 
-.hotel_info h2 a:active {
+.hotel_info h2:active {
 	color: rgba(0, 0, 0, 0.3);
 }
 
