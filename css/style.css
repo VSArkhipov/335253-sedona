@@ -397,7 +397,7 @@ body {
 	margin-top: 0px;
 }
 
-.find h2{
+.find h2 {
 	font-size: 30px;
 	line-height: 24px;
 	font-weight: bold;
@@ -418,7 +418,7 @@ body {
 	margin-top: 47px;
 }
 
-.link a{
+.link a {
 	display: inline-block;
 	width: 568px;
 	font-size: 21px;
@@ -440,7 +440,70 @@ body {
 
 .map {
 	background: url("../img/map.jpg") no-repeat;
-	padding-bottom: 201px;
+	height: 596px;
+}
+
+.map iframe {
+	border: none;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-80px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-show {
+	z-index: 1;
+	position: absolute;
+	width: 100%;
+	top: -593px;
+	animation: bounce 0.6s;
+}
+.modal-wrapper {
+	position: relative;
+}
+
+.modal-hidden {
+	display: none;
+}
+
+.modal-error {
+	animation: shake 0.6s;
 }
 
 .map form {
@@ -452,6 +515,7 @@ body {
     margin-left: auto;
 	box-shadow: 0px 0px 7px 0 rgba(0, 0, 0, 0.35);
 	padding-top: 55px;	
+	left: 50%;
 }
 
 .map input {
@@ -563,7 +627,7 @@ body {
 	position: absolute;
 	padding-right: 9px;
 	padding-top: 8px;
-	right: 445px;
+	right: 371px;
 }
 
 .calendar a:hover svg path {
