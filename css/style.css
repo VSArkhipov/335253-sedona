@@ -424,6 +424,7 @@
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	background: #eeeeee;
 }
@@ -634,6 +635,7 @@
 }
 
 .map input::-webkit-input-placeholder {
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	color: black;
 	text-transform: uppercase;
@@ -846,14 +848,11 @@
 	background-color: #f2f2f2;
 	text-transform: uppercase;
 	line-height: normal;
-	
 	text-align: center;
 }
 
 .params {
 	background: url("../img/fon.jpg") no-repeat #0066cc;
-	/*max-height: 217px;*/
-	line-height: 0px;
 }
 
 .params_form {
@@ -861,6 +860,10 @@
 	display: -ms-flexbox;
 	display: flex;
 	padding-bottom: 3px;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	line-height: 0px;
 }
 
 .params h2 {
@@ -899,7 +902,7 @@
 
 .infrastructure h2 {
 	margin: 0px 0px;
-	padding-bottom: 21px;
+	padding-bottom: 24px;
 }
 
 .infrastructure {
@@ -975,21 +978,21 @@
 }
 
 .pool {
-	margin-bottom: 20px;
+	margin-bottom: 22px;
 }
 
 .parking {
-	margin-bottom: 18px;
+	margin-bottom: 21px;
 }
 
 .type_of_housing h2 {
 	margin: 0px 0px;
-	padding-bottom: 21px;
+	padding-bottom: 24px;
 }
 
 .type_of_housing {
 	width: 150px;
-	margin-left: 112px;
+	margin-left: 110px;
 	padding-top: 26px;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -1001,11 +1004,12 @@
 }
 
 .hotel {
-	margin-bottom: 20px;
+	margin-bottom: 22px;
+	width: 136px;
 }
 
 .motel {
-	margin-bottom: 18px;
+	margin-bottom: 21px;
 }
 
 .price h2 {
@@ -1014,8 +1018,8 @@
 }
 
 .price {
-	width: 323px;
-	margin-left: 337px;
+	width: 318px;
+	margin-left: 333px;
 	margin-bottom: 30px;
 	margin-right: 70px;
 	padding-top: 26px;
@@ -1026,6 +1030,7 @@
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	flex-direction: column;
+	
 }
 
 .price .min, .price .max {
@@ -1121,8 +1126,8 @@
 	-ms-flex-align: center;
 	align-items: center;
 	padding-left: 70px;
-	padding-bottom: 14px;
-	padding-top: 11px;
+	padding-bottom: 13px;
+	padding-top: 12px;
 	background: #fefefe;
 }
 
@@ -1139,7 +1144,7 @@
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	margin-top: 5px;
+	margin-top: 8px;
 }
 
 .sorting_list {
@@ -1267,8 +1272,8 @@
 
 .hotel_info h2 {
 	margin: 0px 0px;
-	padding-top: 0px;
-	padding-bottom: 10px;
+	padding-top: 1px;
+	padding-bottom: 9px;
 }
 
 .more_and_reserv {
@@ -1337,7 +1342,7 @@
 .rating {
 	margin-right: 72px;
 	margin-top: 15px;
-	width: 180px;
+	max-width: 180px;
 }
 
 .stars {
