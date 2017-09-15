@@ -716,6 +716,8 @@
 	align-items: center;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+	position: relative;
+	width: 458px;
 }
 
 .out {
@@ -800,8 +802,8 @@
 .calendar {
 	position: absolute;
 	padding-right: 9px;
-	padding-top: 8px;
-	right: 371px;
+	right: 0px;
+	top: 8px;
 }
 
 .calendar a {
@@ -1019,6 +1021,7 @@
 
 .price {
 	width: 318px;
+	
 	margin-left: 333px;
 	margin-bottom: 30px;
 	margin-right: 70px;
