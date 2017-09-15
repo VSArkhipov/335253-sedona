@@ -855,6 +855,7 @@
 
 .params {
 	background: url("../img/fon.jpg") no-repeat #0066cc;
+
 }
 
 .params_form {
@@ -866,6 +867,7 @@
 	flex-wrap: wrap;
 	max-width: 1200px;
 	line-height: 0px;
+	
 }
 
 .params h2 {
